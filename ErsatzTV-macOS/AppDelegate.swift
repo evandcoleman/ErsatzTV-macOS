@@ -44,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   @objc func showLogs(sender: Any?) {
     NSWorkspace.shared.selectFile(
       nil,
-      inFileViewerRootedAtPath: FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("/Library/Application Support/ersatztv/logs"))
+      inFileViewerRootedAtPath: FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("/Library/Application Support/ersatztv/logs").path)
   }
 
   func constructMenu() {
